@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
+    <key>CADisableMinimumFrameDurationOnPhone</key>
+    <true/>
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
@@ -17,7 +19,7 @@
     <key>CFBundlePackageType</key>
     <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
     <key>CFBundleShortVersionString</key>
-    <string>8.14.2</string>
+    <string>8.17.2</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleURLTypes</key>
@@ -26,47 +28,42 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>bangumi</string>
-          <string>tv.bangumi.czy0729</string>
+          <string>com.jfmoe.bangumi</string>
         </array>
       </dict>
     </array>
     <key>CFBundleVersion</key>
     <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>12.0</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSAppTransportSecurity</key>
     <dict>
       <key>NSAllowsArbitraryLoads</key>
+      <false/>
+      <key>NSAllowsLocalNetworking</key>
       <true/>
-      <key>NSExceptionDomains</key>
-      <dict>
-        <key>localhost</key>
-        <dict>
-          <key>NSExceptionAllowsInsecureHTTPLoads</key>
-          <true/>
-        </dict>
-      </dict>
     </dict>
+    <key>NSCalendarsFullAccessUsageDescription</key>
+    <string>The app needs to access your calendar.</string>
     <key>NSCalendarsUsageDescription</key>
-    <string>Allow $(PRODUCT_NAME) to access your calendars</string>
+    <string>The app needs to access your calendar.</string>
+    <key>NSRemindersFullAccessUsageDescription</key>
+    <string>Allow $(PRODUCT_NAME) to access your reminders</string>
     <key>NSRemindersUsageDescription</key>
     <string>Allow $(PRODUCT_NAME) to access your reminders</string>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>
     <array>
-      <string>armv7</string>
+      <string>arm64</string>
     </array>
     <key>UIRequiresFullScreen</key>
-    <false/>
+    <true/>
     <key>UIStatusBarStyle</key>
     <string>UIStatusBarStyleDefault</string>
     <key>UISupportedInterfaceOrientations</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationPortraitUpsideDown</string>
-    </array>
-    <key>UISupportedInterfaceOrientations~ipad</key>
     <array>
       <string>UIInterfaceOrientationPortrait</string>
       <string>UIInterfaceOrientationPortraitUpsideDown</string>
@@ -74,7 +71,7 @@
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UIUserInterfaceStyle</key>
-    <string>Automatic</string>
+    <string>Light</string>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
   </dict>

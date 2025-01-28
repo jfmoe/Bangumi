@@ -8,9 +8,7 @@
     <false/>
     <key>EXUpdatesLaunchWaitMs</key>
     <integer>0</integer>
-    <key>EXUpdatesSDKVersion</key>
-    <string>45.0.0</string>
-    <key>EXUpdatesURL</key>
-    <string>https://exp.host/@bgmtv/bangumi-pro</string>
+    <key>EXUpdatesRuntimeVersion</key>
+    <string>1.0.0</string>
   </dict>
 </plist>
